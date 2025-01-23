@@ -24,6 +24,12 @@ if "chat_history" not in st.session_state:
 
 # Streamlit page title
 st.title("🤖 Data Science ChatBot")
+st.caption(
+    """
+    Developed by: Prathamesh Gole | [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black?logo=linkedin&logoColor=white&style=flat)](https://www.linkedin.com/in/prathamesh-pradip-gole-45987b282/) [![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&logoColor=white&style=flat)](https://github.com/PrathameshGole26)
+    """,
+    unsafe_allow_html=True
+)
 
 # Display chat history
 for message in st.session_state.chat_history:
